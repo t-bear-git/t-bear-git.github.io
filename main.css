@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+
+
+.btn {
+  color: #FF6700;
+  background-color: #133C55;
+}
+
+.feed-container {
+  border: 1px solid black;
+}
+
+.feed-row {
+  border: 3px solid pink;
+}
+
+.feed {
+  border: 1px solid red;
+}
+
+.items {
+    border-radius: 18px
+}
+
+.tags {
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer
+}
+
+.about {
+    font-size: 14px;
+}
+
+.posted {
+  font-size: 10px;
+}
+
+.friend-list {
+  border: 1px solid blue;
+}
+
+.blur {
+  filter: blur(4px);
+}
