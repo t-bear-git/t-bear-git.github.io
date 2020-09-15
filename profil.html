@@ -15,14 +15,19 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Ext. CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="profilstyle.css" />
 
-    <title>Hello, world!</title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6d8fa96587.js" crossorigin="anonymous"></script>
+
+    <title>N-Crypt</title>
   </head>
   <body>
+    <!-- Nav start -->
     <nav
-      class="navbar navbar-expand-md navbar-dark bg-info fixed-top flex-nowrap"
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top flex-nowrap"
     >
       <button
         class="navbar-toggler mr-2"
@@ -32,45 +37,92 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <span class="navbar-brand w-100">Navbar 5</span>
+      <span class="navbar-brand w-100">N-Crypt</span>
       <div
         class="navbar-collapse collapse w-100 justify-content-center"
         id="navbar5"
       >
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Hem</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Feed</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profil</a>
+            <a class="nav-link" href="#">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Om oss</a>
+            <a class="nav-link" href="#">About</a>
           </li>
         </ul>
       </div>
       <div class="w-100"><!--spacer--></div>
     </nav>
+    <!-- Nav end -->
+    <!-- Main container start -->
     <div class="container-fluid main-container">
       <div class="row main-row">
+        <!-- Settings Col start -->
         <div class="col-xs-12 col-md-3 order-md-1 order-2 main-col">
-          <h6 class="pt-3">Inställningar</h6>
-          <ul class="list-group list-group-flush">
-            <a href="#" class="list-group-item py-2">Inst. 1</a>
-            <a href="#" class="list-group-item py-2">Inst. 2</a>
-            <a href="#" class="list-group-item py-2">Inst. 3</a>
-            <a href="#" class="list-group-item py-2">Inst. 4</a>
-            <a href="#" class="list-group-item py-2">Inst. 5</a>
+          <h6 class="pt-3">Settings</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile Setting</a>
+            </li>
           </ul>
         </div>
+        <!-- Settings Col end -->
+
+        <!-- Profile Col start -->
         <div class="col-xs-12 col-md-6 order-md-2 order-1 main-col">
-          <h3 class="text-center">John Doe</h3>
-          <div class="card my-2 border border-success" style="width: 100px">
-            <img src="imgprofil/profil.jpg" class="card-img-top" alt="..." />
+          <h3 class="text-center mt-3">Nicolas Ladino</h3>
+          <div class="card my-2 rounded" style="width: 100px">
+            <img src="imgprofil/profil2.jpg" class="card-img-top" alt="..." />
           </div>
+          <!-- First Profile Post Start -->
+          <div class="container mt-5">
+            <div class="d-flex justify-content-center row">
+              <div>
+                <div class="list">
+                  <div class="items p-2 bg-white px-3 border mt-2">
+                    <div class="d-flex justify-content-between align-items-center user-info">
+                      <div class="d-flex flex-row align-items-center"><img src="imgprofil/postimg.jpg" width="60" class="rounded-circle">
+                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Nicolas Ladino</span><span class="posted">Posted 3 minutes ago...</span>
+                        </div>
+                      </div>
+                      <div><i class="fa fa-bookmark-o fa-2x text-info"></i></div>
+                    </div>
+                    <hr>
+                    <div>
+                      <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet lectus at purus suscipit, ac rutrum nunc porta. Vestibulum dui nunc, ullamcorper id hendrerit id, pulvinar a ex. Curabitur aliquet urna sit amet velit dignissim convallis. Fusce sed dignissim enim, ac ultricies dui. Vivamus laoreet vel risus a bibendum. Aliquam a mollis velit, id dignissim massa. Donec pretium tortor in posuere lobortis.</p>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Profile Post End -->
           <div
             id="carouselExampleControls"
             class="carousel slide"
@@ -113,11 +165,13 @@
             </a>
           </div>
         </div>
+        <!-- Profile Col End -->
         <div class="col-xs-12 col-md-3 order-md-3 order-3 main-col">
           Row 1 Col 3
         </div>
       </div>
     </div>
+    <!-- Main container End -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
