@@ -6,7 +6,10 @@
   text-align: center;
   font-size: 25px;
   color: #fff;
-}  
+}
+.headline {
+  color: #133C55;
+}
   .namnam {
   color: #fff;
   background: #133C55;
