@@ -2,19 +2,25 @@ body {
   background: #FFFFFF;
 }
 
+#mysettings {
+background: #fff;
+text-align: center;
+font-size: 25px;
+color: #fff;
+}
 
+.namnam {
+color: #fff;
+background: #133C55;
+}
+
+.headline {
+  color: #133C55;
+}
 
 .btn {
   color: #FF6700;
   background-color: #000;
-}
-
-.feed-container {
-  xborder: 2px solid #F5F5F5;
-}
-
-.feed-row {
-  xborder: 2px solid #F5F5F5;
 }
 
 .feed {
@@ -66,10 +72,6 @@ body {
     color: #FF6700;
     background-color: #133C55;
     border-color: #133C55; /*set the color you want here*/
-}
-
-.friend-list {
-  xborder: 2px solid #F5F5F5;
 }
 
 .blur {
