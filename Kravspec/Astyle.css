@@ -8,3 +8,6 @@
 	-o-background-size: cover;
 	background-size: cover
 }
+.min-col {
+	background: linear-gradient(45deg, white, transparent);
+}
