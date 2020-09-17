@@ -13,7 +13,7 @@
   float: left;
   overflow: hidden;
   width: 100%;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   height:368px;
   border:none;
@@ -60,9 +60,10 @@
 .profile-card-1 i {
   display: inline-block;
     font-size: 16px;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
-    border: 1px solid #fff;
+    border: 1px solid #133C55;
+    background-color: #133C55;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -78,8 +79,8 @@
     text-decoration:none;
 }
 .profile-card-1 i:hover {
-  background-color:#fff;
-  color:#2E3434;
+  background-color:#133C55;
+  color:#FF6700;
   text-decoration:none;
 }
 .btn {
