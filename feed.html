@@ -8,13 +8,11 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/6d8fa96587.js" crossorigin="anonymous"></script>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #133C55">
       <a class="navbar-brand" href="#">N-Crypt</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
       <span class="navbar-toggler-icon"></span>
@@ -22,16 +20,16 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link"><i class="fas fa-home fa-2x"></i></a>
           </li>
           <li class="nav-item">
-            <a href="profil.html" class="nav-link">Profile</a>
+            <a href="profil.html" class="nav-link"><i class="fas fa-user fa-2x"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Messages</a>
+            <a href="#" class="nav-link"><i class="fas fa-envelope fa-2x"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Notification</a>
+            <a href="#" class="nav-link"><i class="fas fa-bell fa-2x"></i></a>
           </li>
         </ul>
       </div>
@@ -44,47 +42,23 @@
       <!-- COLUMNS -->
       <div class="row feed-row">
 
-        <!-- SETTINGS -->
-        <div class="col-md-3 col-xs-2 mt-2 settings">
-          <h3>Settings</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">General</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Security</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Location</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Status</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mobile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Access</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Friends</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Network</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Followers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Other</a>
-            </li>
-          </ul>
+        <!--- SETTINGS -->
+        <div class="col-md-3 col-xs-2 mt-2 settings" id="mysettings">
+          <h4 class="text-center headline">Settings</h4>
+            <div class="list-group" >
+              <a href="#" class="list-group-item list-group-item-action namnam">General</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Security</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Location</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Notification</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Login</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Status</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Mobile</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Access</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Friends</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Network</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Followers</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Other</a>
+            </div>
         </div>
         <!-- SETTINGS END -->
 
@@ -99,14 +73,14 @@
                 <div class="list">
                   <div class="items p-2 bg-white px-3 border mt-2">
                     <div class="d-flex justify-content-between align-items-center user-info">
-                      <div class="d-flex flex-row align-items-center"><img src="img/man1.jpg" width="80" class="rounded-circle">
+                      <div class="d-flex flex-row align-items-center"><img src="img/profil3.jpg" width="80" class="rounded-circle">
                         <div class="d-flex flex-column user-name-followers ml-2">
                           <form>
                             <div class="form-group">
                               <label for="exampleInputEmail1"></label>
                               <div class="d-flex flex-row mb-3 justify-content-center"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-camera fa-2x text-info"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-images fa-2x text-info"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-video fa-2x text-info"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-headset fa-2x text-info"></i></span>
                               </div>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="What do you want to share today?">
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Share some thoughts?">
                             </div>
                             <button type="submit" class="btn btn-primary">Post</button>
                           </form>
@@ -232,7 +206,7 @@
                   <div class="items p-2 bg-white px-3 border mt-2">
                     <div class="d-flex justify-content-between align-items-center user-info">
                       <div class="d-flex flex-row align-items-center"><img src="img/girl2.jpeg" width="60" class="rounded-circle">
-                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Emma Woods</span><span class="posted">Posted 8 hours ago...</span>
+                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Leslie Knope</span><span class="posted">Posted 8 hours ago...</span>
                         </div>
                       </div>
                       <div><i class="fa fa-bookmark fa-2x text-info"></i></div>
@@ -258,11 +232,11 @@
         <div class="col-md-3 col-xs-2 friend-list">
           <div class="card mx-auto">
             <div class="list-group mb-2 mt-2">
-              <h4>Connections</h4>
+              <h4 class="text-center headline">Connections</h4>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/man3.jpeg" width="60" class="rounded-circle mr-2">Malcolm Reynolds<span class="globe"><i class="fas fa-globe online"></i></span></li>
-              <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/girl2.jpeg" width="60" class="rounded-circle mr-2">Emma Woods<span class="globe"><i class="fas fa-globe offline"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/girl2.jpeg" width="60" class="rounded-circle mr-2">Leslie Knope<span class="globe"><i class="fas fa-globe offline"></i></span></li>
               <li class="list-group-item list-group-item-action mb-1 layer2"><img src="img/man4.jpeg" width="60" class="rounded-circle mr-2 blur">Amos Burton<span class="globe"><i class="fas fa-globe online"></i></span></li>
               <li class="list-group-item list-group-item-action mb-1 layer3"><img src="img/girl3.jpeg" width="60" class="rounded-circle mr-2 blur"><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><span class="globe online"><i class="fas fa-globe"></i></span></li>
               <li class="list-group-item list-group-item-action mb-1 layer2"><img src="img/girl4.jpeg" width="60" class="rounded-circle mr-2 blur">Danai Gurira<span class="globe"><i class="fas fa-globe offline"></i></span></li>
