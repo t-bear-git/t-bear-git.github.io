@@ -3,18 +3,20 @@
   <head>
     <title>N-Crypt</title>
     <meta charset="utf-8">
+    <meta name="description" content= "Social Media with focus on data security. Users choose what information is shared with other users. N-Crypt will never use or sell users personal data" />
+    <meta name="robots" content= "index, follow">
+    <meta name="keywords" content="Personal data, Encryption, N-crypt, Data Security, Cyber security, Secure social media, Social media, Unique Social Media, Private data, End to end encryption">
+    <meta name="author" content="Grupp Norrsken">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/6d8fa96587.js" crossorigin="anonymous"></script>
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #133C55">
       <a class="navbar-brand" href="#">N-Crypt</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
       <span class="navbar-toggler-icon"></span>
@@ -22,16 +24,19 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="feed.html" class="nav-link"><i class="fas fa-home fa-2x"></i></a>
           </li>
           <li class="nav-item">
-            <a href="profil.html" class="nav-link">Profile</a>
+            <a href="profil.html" class="nav-link"><i class="fas fa-user fa-2x"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Messages</a>
+            <a href="#" class="nav-link"><i class="fas fa-envelope fa-2x"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Notification</a>
+            <a href="#" class="nav-link"><i class="fas fa-bell fa-2x"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"><i class="fas fa-question-circle fa-2x"></i></a>
           </li>
         </ul>
       </div>
@@ -44,53 +49,58 @@
       <!-- COLUMNS -->
       <div class="row feed-row">
 
-        <!-- SETTINGS -->
-        <div class="col-md-3 col-xs-2 mt-2 settings">
-          <h3>Settings</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">General</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Security</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Location</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Notifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Status</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mobile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Access</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Friends</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Network</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Followers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Other</a>
-            </li>
-          </ul>
+        <!--- SETTINGS -->
+        <div class="col-md-3 col-xs-2 mt-2 settings" id="mysettings">
+          <h4 class="text-center headline">Settings</h4>
+            <div class="list-group" >
+              <a href="#" class="list-group-item list-group-item-action namnam">General</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Security</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Location</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Notification</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Login</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Status</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Mobile</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Access</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Friends</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Network</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Followers</a>
+              <a href="#" class="list-group-item list-group-item-action namnam">Other</a>
+            </div>
         </div>
         <!-- SETTINGS END -->
 
 
         <!-- FEED -->
         <div class="col-md-6 col-xs-8 feed">
+
+        <!-- PUBLISH -->
+          <div class="container mt-3">
+            <div class="d-flex justify-content-center row">
+              <div>
+                <div class="list">
+                  <div class="items p-2 bg-white px-3 border mt-2">
+                    <div class="d-flex justify-content-between align-items-center user-info">
+                      <div class="d-flex flex-row align-items-center"><img src="img/profil3.jpg" width="80" class="rounded-circle">
+                        <div class="d-flex flex-column user-name-followers ml-2">
+                          <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1"></label>
+                              <div class="d-flex flex-row mb-3 justify-content-center"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-camera fa-2x text-info"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-images fa-2x text-info"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-video fa-2x text-info"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-headset fa-2x text-info"></i></span>
+                              </div>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Share some thoughts?">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PUBLISH END-->
+
           <!-- FIRST POST -->
           <div class="container mt-5">
             <div class="d-flex justify-content-center row">
@@ -102,12 +112,12 @@
                         <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">John Carlson</span><span class="posted">Posted 3 minutes ago...</span>
                         </div>
                       </div>
-                      <div><i class="fa fa-bookmark-o fa-2x text-info"></i></div>
+                      <div><i class="fa fa-bookmark fa-2x text-info"></i></div>
                     </div>
                     <hr>
                     <div>
                       <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet lectus at purus suscipit, ac rutrum nunc porta. Vestibulum dui nunc, ullamcorper id hendrerit id, pulvinar a ex. Curabitur aliquet urna sit amet velit dignissim convallis. Fusce sed dignissim enim, ac ultricies dui. Vivamus laoreet vel risus a bibendum. Aliquam a mollis velit, id dignissim massa. Donec pretium tortor in posuere lobortis.</p>
-                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up liked"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments liked"></i></span>
                       </div>
                     </div>
                   </div>
@@ -133,7 +143,7 @@
                     <hr>
                     <div>
                       <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet lectus at purus suscipit, ac rutrum nunc porta. Vestibulum dui nunc, ullamcorper id hendrerit id, pulvinar a ex. Curabitur aliquet urna sit amet velit dignissim convallis. Fusce sed dignissim enim, ac ultricies dui. Vivamus laoreet vel risus a bibendum. Aliquam a mollis velit, id dignissim massa. Donec pretium tortor in posuere lobortis.</p>
-                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments"></i></span>
                       </div>
                     </div>
                   </div>
@@ -151,15 +161,15 @@
                   <div class="items p-2 bg-white px-3 border mt-2">
                     <div class="d-flex justify-content-between align-items-center user-info">
                       <div class="d-flex flex-row align-items-center"><img src="img/man4.jpeg" width="60" class="rounded-circle blur">
-                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">HIDDEN NAME</span><span class="posted">Posted 1 hour ago...</span>
+                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Amos Burton</span><span class="posted">Posted 1 hour ago...</span>
                         </div>
                       </div>
-                      <div><i class="fa fa-bookmark-o fa-2x text-info"></i></div>
+                      <div><i class="fa fa-bookmark fa-2x text-info"></i></div>
                     </div>
                     <hr>
                     <div>
                       <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet lectus at purus suscipit, ac rutrum nunc porta. Vestibulum dui nunc, ullamcorper id hendrerit id, pulvinar a ex. Curabitur aliquet urna sit amet velit dignissim convallis. Fusce sed dignissim enim, ac ultricies dui. Vivamus laoreet vel risus a bibendum. Aliquam a mollis velit, id dignissim massa. Donec pretium tortor in posuere lobortis.</p>
-                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up liked"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments"></i></span>
                       </div>
                     </div>
                   </div>
@@ -176,8 +186,8 @@
                 <div class="list">
                   <div class="items p-2 bg-white px-3 border mt-2">
                     <div class="d-flex justify-content-between align-items-center user-info">
-                      <div class="d-flex flex-row align-items-center"><img src="img/man2.jpeg" width="60" class="rounded-circle">
-                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Matt Niskanen</span><span class="posted">Posted 2 hour ago...</span>
+                      <div class="d-flex flex-row align-items-center"><img src="img/man2.jpeg" width="60" class="rounded-circle blur">
+                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold"><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i></span><span class="posted">Posted 3 hours ago...</span>
                         </div>
                       </div>
                       <div><i class="fa fa-bookmark-o fa-2x text-info"></i></div>
@@ -185,7 +195,7 @@
                     <hr>
                     <div>
                       <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet lectus at purus suscipit, ac rutrum nunc porta. Vestibulum dui nunc, ullamcorper id hendrerit id, pulvinar a ex. Curabitur aliquet urna sit amet velit dignissim convallis. Fusce sed dignissim enim, ac ultricies dui. Vivamus laoreet vel risus a bibendum. Aliquam a mollis velit, id dignissim massa. Donec pretium tortor in posuere lobortis.</p>
-                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up liked"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments"></i></span>
                       </div>
                     </div>
                   </div>
@@ -203,16 +213,16 @@
                   <div class="items p-2 bg-white px-3 border mt-2">
                     <div class="d-flex justify-content-between align-items-center user-info">
                       <div class="d-flex flex-row align-items-center"><img src="img/girl2.jpeg" width="60" class="rounded-circle">
-                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Emma Woods</span><span class="posted">Posted 8 hours ago...</span>
+                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Leslie Knope</span><span class="posted">Posted 8 hours ago...</span>
                         </div>
                       </div>
-                      <div><i class="fa fa-bookmark-o fa-2x text-info"></i></div>
+                      <div><i class="fa fa-bookmark fa-2x text-info"></i></div>
                     </div>
                     <hr>
                     <div>
                       <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet lectus at purus suscipit, ac rutrum nunc porta. Vestibulum dui nunc, ullamcorper id hendrerit id, pulvinar a ex.</p>
                       <img src="img/forrest.jpeg" width="100%" class="rounded mb-3">
-                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up liked"></i></span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments liked"></i></span>
                       </div>
                     </div>
                   </div>
@@ -222,27 +232,26 @@
           </div>
           <!-- FIFTH POST END-->
 
-
         </div>
         <!-- FEED END -->
     
         <!-- FRIENDS -->
         <div class="col-md-3 col-xs-2 friend-list">
-          <div class="card mx-auto" style="width: 18rem;">
-            <div class="card-header">
-              Connections
+          <div class="card mx-auto">
+            <div class="list-group mb-2 mt-2">
+              <h4 class="text-center headline">Connections</h4>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><img src="img/man3.jpeg" width="60" class="rounded-circle mr-2">Malcolm Reynolds</li>
-              <li class="list-group-item"><img src="img/girl2.jpeg" width="60" class="rounded-circle mr-2">Emma Woods</li>
-              <li class="list-group-item"><img src="img/man4.jpeg" width="60" class="rounded-circle mr-2 blur">Vestibulum at eros</li>
-              <li class="list-group-item"><img src="img/girl3.jpeg" width="60" class="rounded-circle mr-2 blur">Cras justo odio</li>
-              <li class="list-group-item"><img src="img/girl4.jpeg" width="60" class="rounded-circle mr-2">Danai Gurira</li>
-              <li class="list-group-item"><img src="img/girl5.jpeg" width="60" class="rounded-circle mr-2">Florence Welch</li>
-              <li class="list-group-item"><img src="img/man5.jpeg" width="60" class="rounded-circle mr-2">Claude Giroux</li>
-              <li class="list-group-item"><img src="img/man6.jpg" width="60" class="rounded-circle mr-2">Josephus Miller</li>
-              <li class="list-group-item"><img src="img/man7.jpeg" width="60" class="rounded-circle mr-2 blur">Vestibulum at eros</li>
-              <li class="list-group-item"><img src="img/girl1.jpeg" width="60" class="rounded-circle mr-2">Laura Palmer</li>
+              <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/man3.jpeg" width="60" class="rounded-circle mr-2">Malcolm Reynolds<span class="globe"><i class="fas fa-globe online"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/girl2.jpeg" width="60" class="rounded-circle mr-2">Leslie Knope<span class="globe"><i class="fas fa-globe offline"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer2"><img src="img/man4.jpeg" width="60" class="rounded-circle mr-2 blur">Amos Burton<span class="globe"><i class="fas fa-globe online"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer3"><img src="img/girl3.jpeg" width="60" class="rounded-circle mr-2 blur"><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><span class="globe online"><i class="fas fa-globe"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer2"><img src="img/girl4.jpeg" width="60" class="rounded-circle mr-2 blur">Danai Gurira<span class="globe"><i class="fas fa-globe offline"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/girl5.jpeg" width="60" class="rounded-circle mr-2">Florence Welch<span class="globe"><i class="fas fa-globe offline"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer3"><img src="img/man5.jpeg" width="60" class="rounded-circle mr-2 blur"><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><span class="globe"><i class="fas fa-globe online"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/man6.jpg" width="60" class="rounded-circle mr-2">Josephus Miller<span class="globe"><i class="fas fa-globe offline"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer3"><img src="img/man7.jpeg" width="60" class="rounded-circle mr-2 blur"><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><i class="fas fa-asterisk"></i><span class="globe"><i class="fas fa-globe online"></i></span></li>
+              <li class="list-group-item list-group-item-action mb-1 layer1"><img src="img/girl1.jpeg" width="60" class="rounded-circle mr-2">Laura Palmer<span class="globe"><i class="fas fa-globe online"></i></span></li>
             </ul>
           </div>
         </div>

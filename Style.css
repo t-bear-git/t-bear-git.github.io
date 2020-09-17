@@ -24,12 +24,12 @@
 }
 .signup h2 {
 	font-size: 35px;
-	color: orange;
+	color: #133C55;
 	margin-bottom: 30px;
 }
 .signup h3 {
 	font-size: 25px;
-	color: #1c8adb;
+	color: #FF6700;
 	margin-bottom: 30px;
 }
 
@@ -53,9 +53,9 @@ button {
 	cursor: pointer;
 }
 .signupbutton {
-	background-color: #1c8adb;
+	background-color: #133C55;
 }
 .loginbutton {
-	background-color: green;
+	background-color: #FF6700;
 }
 
