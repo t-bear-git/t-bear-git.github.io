@@ -1,12 +1,10 @@
-body {
-  padding-top: 56px;
-}
 .main-container {
   margin-top: 1px;
 }
 
-.main-col {
-  border: 1px solid gray;
+.mid-col {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
 }
 
 .profile-card-1 {
@@ -25,9 +23,10 @@ body {
   vertical-align: top;
   opacity: 0.9;
   -webkit-filter: blur(5px);
-  filter: blur(5px);
+  filter: blur(2px);
    -webkit-transform: scale(1.8);
-  transform: scale(2.8);
+  transform: scale(2.2);
+  min-height: 210px;
 }
 .profile-card-1 .card-content {
   width: 100%;
@@ -82,4 +81,46 @@ body {
   background-color:#fff;
   color:#2E3434;
   text-decoration:none;
+}
+.btn {
+  color: #FF6700;
+  background-color: #133C55;
+}
+
+.feed-container {
+  border: 1px solid black;
+}
+
+.feed-row {
+  border: 3px solid pink;
+}
+
+.feed {
+  border: 1px solid red;
+}
+
+.items {
+    border-radius: 18px
+}
+
+.tags {
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer
+}
+
+.about {
+    font-size: 14px;
+}
+
+.posted {
+  font-size: 10px;
+}
+
+.friend-list {
+  border: 1px solid blue;
+}
+
+.blur {
+  filter: blur(4px);
 }

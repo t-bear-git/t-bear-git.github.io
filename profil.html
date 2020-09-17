@@ -26,46 +26,35 @@
   </head>
   <body>
     <!-- Nav start -->
-    <nav
-      class="navbar navbar-expand-md navbar-light bg-light fixed-top flex-nowrap"
-    >
-      <button
-        class="navbar-toggler mr-2"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar5"
-      >
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">N-Crypt</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
       </button>
-      <span class="navbar-brand w-100">N-Crypt</span>
-      <div
-        class="navbar-collapse collapse w-100 justify-content-center"
-        id="navbar5"
-      >
-        <ul class="navbar-nav mx-auto">
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a href="#" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Feed</a>
+            <a href="profil.html" class="nav-link">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <a href="#" class="nav-link">Messages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a href="#" class="nav-link">Notification</a>
           </li>
         </ul>
       </div>
-      <div class="w-100"><!--spacer--></div>
     </nav>
     <!-- Nav end -->
     <!-- Main container start -->
     <div class="container-fluid main-container">
       <div class="row main-row">
         <!-- Settings Col start -->
-        <div class="col-xs-12 col-md-3 order-md-1 order-2 main-col">
-          <h6 class="pt-3">Settings</h6>
+        <div class="col-xs-12 col-md-3 order-md-1 order-2 left-col">
+          <h3 class="mt-2">Settings</h3>
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link" href="#">Profile Setting</a>
@@ -93,11 +82,11 @@
         <!-- Settings Col end -->
 
         <!-- Profile Col start -->
-        <div class="col-xs-12 col-md-6 order-md-2 order-1 main-col">
+        <div class="col-xs-12 col-md-6 order-md-2 order-1 mid-col">
           <!-- Profile Card start -->
-          <div class="card profile-card-1">
+          <div class="card profile-card-1 mt-2">
             <img src="imgprofil/cardbg.jpg" alt="profile-sample1" class="background"/>
-            <img src="imgprofil/profil2.jpg" alt="profile-image" class="profile"/>
+            <img src="imgprofil/profil3.jpg" alt="profile-image" class="profile"/>
                 <div class="card-content">
                 <h2>Nicolas Ladino<small>Short Info....</small></h3>
                 <div class="icon-block"><a href="#"><i class="fas fa-user-plus"></i></a><a href="#"> <i class="fas fa-comment-alt"></i></a><a href="#"> <i class="fas fa-rss"></i></a></div>
@@ -105,13 +94,13 @@
             </div>
           <!-- Profile Card End -->
           <!-- First Profile Post Start -->
-          <div class="container my-2">
+          <div class="container mt-2">
             <div class="d-flex justify-content-center row">
               <div>
                 <div class="list">
                   <div class="items p-2 bg-white px-3 border mt-2">
                     <div class="d-flex justify-content-between align-items-center user-info">
-                      <div class="d-flex flex-row align-items-center"><img src="imgprofil/postimg.jpg" width="60" class="rounded-circle">
+                      <div class="d-flex flex-row align-items-center"><img src="imgprofil/profil3.jpg" width="60" class="rounded-circle">
                         <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Nicolas Ladino</span><span class="posted">Posted 3 minutes ago...</span>
                         </div>
                       </div>
@@ -128,10 +117,50 @@
               </div>
             </div>
           </div>
-          <!-- Profile Post End -->
-          <div
+          <!-- First Profile Post End -->
+           <!-- Second Profile Post -->
+           <div class="container mt-2">
+            <div class="d-flex justify-content-center row">
+              <div>
+                <div class="list">
+                  <div class="items p-2 bg-white px-3 border mt-2">
+                    <div class="d-flex justify-content-between align-items-center user-info">
+                      <div class="d-flex flex-row align-items-center"><img src="imgprofil/profil3.jpg" width="60" class="rounded-circle">
+                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Nicolas Ladino</span><span class="posted">Posted 10 minutes ago...</span>
+                        </div>
+                      </div>
+                      <div><i class="fa fa-bookmark-o fa-2x text-info"></i></div>
+                    </div>
+                    <hr>
+                    <div>
+                      <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet lectus at purus suscipit, ac rutrum nunc porta. Vestibulum dui nunc, ullamcorper id hendrerit id, pulvinar a ex. Curabitur aliquet urna sit amet velit dignissim convallis. Fusce sed dignissim enim, ac ultricies dui. Vivamus laoreet vel risus a bibendum. Aliquam a mollis velit, id dignissim massa. Donec pretium tortor in posuere lobortis.</p>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SECOND POST END-->
+          <!-- Third Post -->
+          <div class="container mt-2">
+            <div class="d-flex justify-content-center row">
+              <div>
+                <div class="list">
+                  <div class="items p-2 bg-white px-3 border mt-2">
+                    <div class="d-flex justify-content-between align-items-center user-info">
+                      <div class="d-flex flex-row align-items-center"><img src="imgprofil/profil3.jpg" width="60" class="rounded-circle">
+                        <div class="d-flex flex-column user-name-followers ml-2"><span class="font-weight-bold">Nicolas Ladino</span><span class="posted">Posted 8 hours ago...</span>
+                        </div>
+                      </div>
+                      <div><i class="fa fa-bookmark-o fa-2x text-info"></i></div>
+                    </div>
+                    <hr>
+                    <div>
+                      <div
             id="carouselExampleControls"
-            class="carousel slide"
+            class="carousel slide my-2"
             data-ride="carousel"
           >
             <div class="carousel-inner">
@@ -170,9 +199,20 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+                      <div class="d-flex flex-row mb-3"><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-thumbs-up mr-2"></i>Like</span><span class="px-2 bg-primary text-white mr-1 rounded tags"><i class="fas fa-comments mr-2"></i>Comment</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third Post END-->
+          
         </div>
         <!-- Profile Col End -->
-        <div class="col-xs-12 col-md-3 order-md-3 order-3 main-col">
+        <!-- Contact Col -->
+        <div class="col-xs-12 col-md-3 order-md-3 order-3 right-col">
           Row 1 Col 3
         </div>
       </div>
