@@ -1,24 +1,25 @@
 body {
-  background: #fff;
+  background: #FFFFFF;
 }
 
 
 
 .btn {
   color: #FF6700;
-  background-color: #133C55;
+  background-color: #000;
 }
 
 .feed-container {
-  border: 1px solid black;
+  xborder: 2px solid #F5F5F5;
 }
 
 .feed-row {
-  border: 3px solid pink;
+  xborder: 2px solid #F5F5F5;
 }
 
 .feed {
-  border: 1px solid red;
+  border-left: 2px solid #F5F5F5;
+  border-right: 2px solid #F5F5F5;
 }
 
 .items {
@@ -39,10 +40,97 @@ body {
   font-size: 10px;
 }
 
+.text-info {
+  color: #FF6700!important;
+}
+
+.bg-primary {
+    background-color: #133C55!important;
+}
+
+.liked {
+  color: #FF6700;
+}
+
+.btn {
+    color: #FF6700;
+    background-color: #133C55;
+}
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #133C55;
+    border-color: #133C55;
+}
+
+.btn-primary:hover {
+    color: #FF6700;
+    background-color: #133C55;
+    border-color: #133C55; /*set the color you want here*/
+}
+
 .friend-list {
-  border: 1px solid blue;
+  xborder: 2px solid #F5F5F5;
 }
 
 .blur {
   filter: blur(4px);
+}
+
+.card {
+  border: none;
+}
+
+.card-header {
+  border-radius: 34px;
+}
+
+.card-header+.list-group .list-group-item:first-child {
+    border-top: 3px;
+    border-bottom: 3px;
+    border: solid;
+}
+
+.list-group-flush .list-group-item {
+    border: solid 3px;
+    border-radius: 18px;
+}
+
+.list-group .layer1 {
+    border: 3px solid #133C55;
+    background: rgba(19, 60, 85, 0.1); 
+}
+
+.list-group .layer2 {
+    border: 3px solid #2A81B7;
+    background: rgba(42, 129, 183, 0.1);
+}
+
+.list-group .layer3 {
+    border: 3px solid #7AB9E1;
+    background: rgba(122, 185, 225, 0.1);
+}
+
+.card>.list-group:last-child .list-group-item:last-child {
+     border-bottom-right-radius: 18px;
+     border-bottom-left-radius: 18px;
+}
+
+.list-group-flush:last-child .list-group-item:last-child {
+    margin-bottom: 0px;
+    border-bottom: 3px;
+    border: solid;
+    border-radius: 18px;
+}
+
+.globe {
+    float:right;
+    margin-top: 18px;
+}
+
+.online {
+  color: #16a119;
+}
+
+.offline {
+  color: #b52222;
 }
